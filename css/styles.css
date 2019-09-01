@@ -44,5 +44,10 @@ main {
 
     .content-intro {
         text-align: center;
+        color: white;
+    }
+
+    .content-intro > p:nth-child(1) {
+        font-size: 1.8rem;
     }
 }
