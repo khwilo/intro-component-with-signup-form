@@ -17,6 +17,9 @@ main {
 
 .content-signup__try-btn button {
     font-weight: 500;
+    border: none;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
 }
 
 .content-signup__form form > button {
@@ -56,5 +59,9 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .content-signup__try-btn button {
+        padding: 10px;
     }
 }
