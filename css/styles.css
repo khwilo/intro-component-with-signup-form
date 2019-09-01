@@ -1,7 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+body {
+    font-size: 16px;
+}
+
 main {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.content-intro > p:nth-child(1) {
+    font-weight: 700;
+}
+
+.content-signup__try-btn button {
+    font-weight: 500;
+}
+
+.content-signup__form form > button {
+    font-weight: 600;
 }
 
 .attribution {
