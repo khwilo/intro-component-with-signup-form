@@ -7,6 +7,8 @@ body {
 main {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
 }
 
 .content-intro > p:nth-child(1) {
@@ -37,6 +39,7 @@ main {
         justify-content: center;
         align-items: center;
         height: 100vh;
+        background-image: url("../images/bg-intro-mobile.png");
     }
 
     .content-intro {
