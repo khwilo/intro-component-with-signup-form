@@ -34,9 +34,9 @@ main {
 
 @media only screen and (min-width: 375px) {
     main {
-        display: grid;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 100vh;
         background-image: url("../images/bg-intro-mobile.png");
@@ -49,5 +49,12 @@ main {
 
     .content-intro > p:nth-child(1) {
         font-size: 1.8rem;
+    }
+
+    .content-signup {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
