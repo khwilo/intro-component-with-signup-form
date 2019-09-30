@@ -1,83 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 main {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    background-image: url("../images/bg-intro-desktop.png");
-    background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-image: url('../images/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
 }
 
 .content-intro > p:nth-child(1) {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .content-signup__try-btn button {
-    font-weight: 500;
-    border: none;
-    background-color: hsl(248, 32%, 49%);
-    color: white;
+  font-weight: 500;
+  border: none;
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  box-shadow: 0 8px 7px -2px rgba(7, 7, 7, 0.384);
+}
+
+#try-text {
+  font-weight: bold;
 }
 
 .content-signup__form form > button {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (min-width: 375px) {
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 100vh;
-        background-image: url("../images/bg-intro-mobile.png");
-    }
+@media only screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../images/bg-intro-mobile.png');
+  }
 
-    .content-intro {
-        text-align: center;
-        color: white;
-    }
+  .content-intro {
+    text-align: center;
+    color: white;
+  }
 
-    .content-intro > p:nth-child(1) {
-        font-size: 1.8rem;
-    }
+  .content-intro > p:nth-child(1) {
+    font-size: 1.8rem;
+  }
 
-    .content-signup, form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .content-signup,
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .content-signup__try-btn {
-        width: 80%;
-        margin-bottom: 10px;
-    }
+  .content-signup__try-btn {
+    width: 80%;
+    margin-bottom: 10px;
+  }
 
-    form {
-        background-color: white;
-        width: 75%;
-        margin: 0 auto;
-        padding: 10px;
-    }
+  form {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px;
+  }
 
-    .content-signup__try-btn button {
-        padding: 10px;
-    }
+  .content-signup__try-btn button {
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 
-    form, .content-signup__try-btn button {
-        border-radius: 5px;
-    }
+  form,
+  .content-signup__try-btn button {
+    border-radius: 5px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  .content-signup__form button {
+    width: 98%;
+  }
 }
