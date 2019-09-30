@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
   font-size: 16px;
@@ -9,10 +13,21 @@ main {
   font-weight: 400;
   background-image: url('../images/bg-intro-desktop.png');
   background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.content-intro {
+  color: white;
 }
 
 .content-intro > p:nth-child(1) {
   font-weight: 700;
+}
+
+.content-intro > p:nth-child(1) {
+  font-size: 1.8rem;
 }
 
 .content-signup__try-btn button {
@@ -25,6 +40,118 @@ main {
 
 #try-text {
   font-weight: bold;
+}
+
+.content-signup,
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-signup__try-btn {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.content-signup__try-btn button {
+  font-size: 18px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+form,
+.content-signup__try-btn button {
+  border-radius: 5px;
+}
+
+input,
+.content-signup__form button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+input[type='text']:nth-child(1) {
+  margin-top: 10px;
+}
+
+input {
+  border: 1px solid #c2c2c2;
+}
+
+.content-signup__form button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  box-shadow: 0 6px 4px -2px rgba(7, 7, 7, 0.801);
+}
+
+.content-signup__form-footer p {
+  color: #c2c2c2;
+  font-size: 12px;
+  text-align: center;
+}
+
+#terms-and-services {
+  color: red;
+}
+.content-signup__try-btn {
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input,
+.content-signup__form button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 98%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+input[type='text']:nth-child(1) {
+  margin-top: 10px;
+}
+
+input {
+  border: 1px solid #c2c2c2;
+}
+
+.content-signup__form button {
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  box-shadow: 0 6px 4px -2px rgba(7, 7, 7, 0.801);
+}
+
+.content-signup__form-footer p {
+  color: #c2c2c2;
+  font-size: 12px;
+  text-align: center;
+}
+
+#terms-and-services {
+  color: red;
 }
 
 .content-signup__form form > button {
@@ -46,84 +173,48 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
     background-image: url('../images/bg-intro-mobile.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
   }
 
   .content-intro {
     text-align: center;
-    color: white;
-  }
-
-  .content-intro > p:nth-child(1) {
-    font-size: 1.8rem;
-  }
-
-  .content-signup,
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   .content-signup__try-btn {
     width: 80%;
     margin-bottom: 10px;
   }
+}
 
-  form {
-    background-color: white;
-    width: 75%;
-    margin: 0 auto;
-    padding: 10px;
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
   }
 
-  .content-signup__try-btn button {
-    font-size: 18px;
-    padding: 20px;
-    margin-bottom: 10px;
+  .content-intro {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
   }
 
-  form,
-  .content-signup__try-btn button {
-    border-radius: 5px;
+  .content-signup {
+    display: flex;
+    flex: 1;
   }
 
-  input,
-  .content-signup__form button {
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    width: 98%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+  .content-signup__try-btn {
+    display: flex;
+    justify-content: space-evenly;
   }
 
-  input[type='text']:nth-child(1) {
-    margin-top: 10px;
-  }
-
-  input {
-    border: 1px solid #c2c2c2;
-  }
-
-  .content-signup__form button {
-    background-color: hsl(154, 59%, 51%);
-    border: none;
-    box-shadow: 0 6px 4px -2px rgba(7, 7, 7, 0.801);
-  }
-
-  .content-signup__form-footer p {
-    color: #c2c2c2;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  #terms-and-services {
-    color: red;
+  .content-signup__form form {
+    width: 90%;
   }
 }
