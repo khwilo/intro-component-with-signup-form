@@ -90,11 +90,28 @@ main {
     border-radius: 5px;
   }
 
+  input,
+  .content-signup__form button {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  input[type='text']:nth-child(1) {
+    margin-top: 10px;
+  }
+
   input {
-    width: 90%;
+    border: 1px solid #c2c2c2;
   }
 
   .content-signup__form button {
-    width: 98%;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    box-shadow: 0 6px 4px -2px rgba(7, 7, 7, 0.801);
   }
 }
