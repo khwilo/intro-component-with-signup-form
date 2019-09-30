@@ -22,11 +22,11 @@ main {
   color: white;
 }
 
-.content-intro > p:nth-child(1) {
+.content-intro-details > p:nth-child(1) {
   font-weight: 700;
 }
 
-.content-intro > p:nth-child(1) {
+.content-intro-details > p:nth-child(1) {
   font-size: 1.8rem;
 }
 
@@ -202,6 +202,14 @@ input {
     justify-content: center;
     align-content: center;
     flex: 1;
+  }
+
+  .content-intro-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
   }
 
   .content-signup {
